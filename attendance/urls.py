@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
 from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url("osra/",views.OsraApiView.as_view()),
-    url("shamas/",views.shamasApiView.as_view()),
+    path('osra/',views.OsraApiView.as_view()),
+    path('shamas/',views.shamasApiView.as_view()),
 ]
