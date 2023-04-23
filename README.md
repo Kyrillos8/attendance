@@ -1,10 +1,9 @@
 # attendance
 
-Make first:
-pip install djangorestframework
-pip install markdown
+firstly run:
+pip -r requirements.txt
 
-Then:
+Then run:
 py manage.py makemigrations
 py manage.py migrate
 
